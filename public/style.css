@@ -1,0 +1,193 @@
+/* FONTES */
+@import "https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap";
+
+:root{
+    --color-red-ligth: #f30404cc;
+    --color-background-body: #121525;
+    --color-background-card: #f3f4f72c;
+    --color-background-header: rgba(0, 0, 0, 0.256);
+    --color-background-modal-overlay: rgba(0, 0, 0, 0.692);
+    --color-white: white;
+    --color-red: #f30404;
+    --color-background-alternativo: #998989;
+
+}
+
+/* ESTILIZAÇÃO */
+
+/* ===RESET=== */
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-background-body);
+    color: var(--color-white);
+    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Libre Baskerville', serif; */
+}
+
+/* ===PAGE INDEX=== */
+header{
+    padding: 22px;
+    border-bottom: 1px solid var(--color-background-alternativo);
+    background: var(--color-background-header);
+}
+.links{
+    text-align: center;
+    font-weight: bold;
+}
+
+.links a{
+    color: var(--color-white);
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0px 20px;
+    font-size: 28px;
+    line-height: 28px;
+    opacity: 0.5;
+}
+
+.menor_espacamento a{
+   margin: 0px 8px;
+
+}
+
+.links a:hover{
+    /* color: var(--color-red); */
+    opacity: 1;
+    transition: opacity 600ms;
+}
+
+main{
+    text-align: center;
+    padding: 32px;
+}
+
+main img{
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid var(--color-white);
+
+}
+main h1{
+    margin-top: 22px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+main h3{
+    margin-top: 32px;
+    line-height: 25px;
+    max-width: 500px;
+    margin: 22px auto;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+main p{
+    max-width: 700px;
+    margin: 22px auto;
+    line-height: 25px;
+}
+
+footer{
+    display: flex;
+    bottom: 25px;
+}
+.rodape{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+/* ===PAGE PROJECTS=== */
+
+.cards{
+    max-width: 800px;
+    margin: 10px auto;
+  /*   display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 16px; */
+}
+
+.informative{
+    background-color: var(--color-background-card);
+    padding: 32px;
+    border-radius: 10px;
+}
+
+.card_info{
+    padding: 5px 32px;
+    
+}
+.card_info li, .card_info p{
+    margin-left: 35px;
+    margin-bottom: 3px;
+}
+
+.card_info .link-demo, .link-project{
+    color: var(--color-red);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card_image-content{
+    display: flex;
+    justify-content: center;
+}
+
+.card_image-content img{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    height: 300px;
+}
+
+/* ===MODAL=== */
+
+.modal-overlay{
+    background-color: var(--color-background-modal-overlay);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
+}
+
+.model{
+    background-color: var(--color-white);
+    margin: 5vh auto;
+    width: 90%;
+    height: 90%;
+    position: relative; /* Relativo ao close-model, para utilização do absolute */
+}
+
+.model .close-model{
+    color:  black;
+    position: absolute;
+    padding: 10px 14px;
+    right: 0;
+    cursor: pointer;
+
+}
+
+.modal-overlay.active{
+    /* display: block; */
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    
+}
