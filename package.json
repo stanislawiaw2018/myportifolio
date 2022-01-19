@@ -8,7 +8,8 @@
   "author": "Antonio Stanislaw <stanislaw.aiw2018@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "nunjucks": "^3.2.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
