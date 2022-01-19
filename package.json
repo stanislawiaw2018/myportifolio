@@ -1,0 +1,13 @@
+{
+  "name": "modulo_3",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Antonio Stanislaw <stanislaw.aiw2018@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
