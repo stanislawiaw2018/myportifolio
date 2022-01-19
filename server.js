@@ -16,7 +16,7 @@ nunjucks.configure("views", {
 
 // ######ROTAS########
 server.get( "/" ,  function(req, res) {
-        return res.render("index");
+        return res.render("about");
 });
 server.get( "/projects" ,  function(req, res) {
         return res.render("projects");
