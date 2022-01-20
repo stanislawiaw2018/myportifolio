@@ -18,6 +18,9 @@ nunjucks.configure("views", {
 server.get( "/" ,  function(req, res) {
         return res.render("about");
 });
+server.get( "/teste" ,  function(req, res) {
+        return res.render("teste");
+});
 server.get( "/projects" ,  function(req, res) {
         return res.render("projects");
 });
