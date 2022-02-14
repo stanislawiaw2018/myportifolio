@@ -1,5 +1,8 @@
+// SERVIDOR
 const express = require('express');
+// TEMPLATE NAME
 const nunjucks = require('nunjucks');
+
 
 const server = express();
 
@@ -7,9 +10,9 @@ const server = express();
 server.use(express.static('public'));
 
 //caracteriza a extensão do arquivo
-server.set("view engine", "html");
+server.set("view engine", "njk");
 
-//pasta onde fica os arquivos estaticos
+//pasta onde fica os arquivos estáticos
 nunjucks.configure("views", {
     express:   server
 })
@@ -26,5 +29,5 @@ server.get( "/projects" ,  function(req, res) {
 });
 
 server.listen(5001, function () {
-    console.log('listening on port');
+    console.log('listening on port 5001');
 });
